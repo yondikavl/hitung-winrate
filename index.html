@@ -1,201 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>YONDIKA VIO LANDA</title>
-    <!----CSS link----->
-    <link rel="stylesheet" href="style.css"> 
-    <!-- =====BOX ICONS===== -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" rel="stylesheet" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Penghitung WR Mobile Legend</title>
+    <link rel="shortcut icon" href="assets/img/logo-yondika.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
+    <div class="container pb-4">
+        <div class="row justify-content-center">
+            <div class="bg-dark mb-4 py-1 text-white text-center welcomeMsg py-sm-2" id="welcomeMsg">
+                <p class="animation mb-0 text-truncate">SELAMAT DATANG CUIII</p>
+            </div>
+            <div class="col-lg-6 col-md-9 col-sm-9">
+                <div class="text-center mb-3 d-flex flex-column align-items-center">
+                    <a href="https://instagram.com/yondikavl_" target="_blank">
+                        <img class="logo-img" style="border-radius:50%" src="assets/img/logo-yondika.png">
+                    </a>
+                </div>
 
- <!--===== HEADER =====-->
- <header class="l-header">
-  <nav class="nav bd-grid">
-      <div>
-          <a href="#" class="nav__logo">Yondika</a>
-      </div>
+                <div class="card mb-3 rounded">
 
-      <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-              <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-              <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-              <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-              <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-              <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-          </ul>
-      </div>
+                    <form class="">
+                        <div class="mb-3">
+                            <label class="mb-1" for="idMatch">Total Match Anda</label>
+                            <input type="number" placeholder="Contoh: 162" autofocus autocomplete="off" id="tMatch" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="mb-1" for="tWr">Total WinRate Anda</label>
+                            <input type="number" placeholder="Contoh: 73.8" step="any" autocomplete="off" id="tWr" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="mb-1" for="wrReq">Berapa WinRate yang anda inginkan?</label>
+                            <input type="number" placeholder="Contoh: 80" step="any" autocomplete="off" id="wrReq" class="form-control">
+                        </div>
+                        <button class="btn btn-primary d-block w-100 mt-4" type="button" id="hasil">Hasil</button>
+                    </form>
+                </div>
 
-      <div class="nav__toggle" id="nav-toggle">
-          <i class='bx bx-menu'></i>
-      </div>
-  </nav>
-</header>
+                <span id="resultText" class="text-center d-block font-nunito">
+                </span>
 
-<main class="l-main">
-  <!--===== HOME =====-->
-  <section class="home bd-grid" id="home">
-      <div class="home__data">
-          <h1 class="home__title">Hi, Iam <span class="home__title-color">Yondika</span></h1>
-          <h1 class="home__bottitle">Informatics Eng.<br>Student</h1>
-
-          <a href="https://instagram.com/yondikavl_" class="button" target="_blank">Hire Me</a>
-      </div>
-
-      <div class="home__social">
-        <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-        <a href="https://dribbble.com/yondika" target="_blank" class="home__social-icon"><i class='bx bxl-dribbble' ></i></a>
-        <a href="https://github.com/yondikavl" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-      </div>
-
-      <div class="home__img">    
-          <img src="./image/perfil.png" alt="Hero Image">
-      </div>
-  </section>
-
-  <!--===== ABOUT =====-->
-  <section class="about section " id="about">
-      <h2 class="section-title">About</h2>
-
-      <div class="about__container bd-grid">
-          <div class="about__img">
-              <img src="./image/about.jpg" alt="">
-          </div>
-          
-          <div>
-              <h2 class="about__subtitle">I'am Yondika</h2>
-              <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>
-              <br>
-              <a href="https://instagram.com/yondikavl_" href="https://drive.google.com/file/d/1a80Q1puPfpu2dXFMCUVDRgwwLf0Q87K1/view?usp=sharing" class="button" target="_blank">Download CV</a>
-          </div>                                   
-      </div>
-  </section>
-
-  <!--===== SKILLS =====-->
-  <section class="skills section" id="skills">
-      <h2 class="section-title">Skills</h2>
-
-      <div class="skills__container bd-grid">          
-          <div>
-              <h2 class="skills__subtitle">Profesional Skills</h2>
-              <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-              <div class="skills__data">
-                  <div class="skills__names">
-                      <i class='bx bxl-html5 skills__icon'></i>
-                      <span class="skills__name">HTML5</span>
-                  </div>
-                  <div class="skills__bar skills__html">
-
-                  </div>
-                  <div>
-                      <span class="skills__percentage">95%</span>
-                  </div>
-              </div>
-              <div class="skills__data">
-                  <div class="skills__names">
-                      <i class='bx bxl-css3 skills__icon'></i>
-                      <span class="skills__name">CSS3</span>
-                  </div>
-                  <div class="skills__bar skills__css">
-                      
-                  </div>
-                  <div>
-                      <span class="skills__percentage">85%</span>
-                  </div>
-              </div>
-              <div class="skills__data">
-                  <div class="skills__names">
-                      <i class='bx bxl-javascript skills__icon' ></i>
-                      <span class="skills__name">JAVASCRIPT</span>
-                  </div>
-                  <div class="skills__bar skills__js">
-                      
-                  </div>
-                  <div>
-                      <span class="skills__percentage">65%</span>
-                  </div>
-              </div>
-              <div class="skills__data">
-                  <div class="skills__names">
-                      <i class='bx bxs-paint skills__icon'></i>
-                      <span class="skills__name">UI/UX</span>
-                  </div>
-                  <div class="skills__bar skills__ux">
-                      
-                  </div>
-                  <div>
-                      <span class="skills__percentage">85%</span>
-                  </div>
-              </div>
-          </div>
-          
-          <div>              
-              <img src="./image/work3.jpg" alt="" class="skills__img">
-          </div>
-      </div>
-  </section>
-
-  <!--===== WORK =====-->
-  <section class="work section" id="work">
-      <h2 class="section-title">Work</h2>
-
-      <div class="work__container bd-grid">
-          <div class="work__img">
-              <img src="./image/work1.jpg" alt="img portofolio">
-          </div>
-          <div class="work__img">
-              <img src="./image/work2.png" alt="img portofolio">
-          </div>
-          <div class="work__img">
-              <img src="./image/work3.jpg" alt="img portofolio">
-          </div>
-          <div class="work__img">
-              <img src="./image/work4.png" alt="img portofolio">
-          </div>
-          <div class="work__img">
-              <img src="./image/work5.jpg" alt="img portofolio">
-          </div>
-          <div class="work__img">
-              <img src="./image/work6.png" alt="img portofolio">
-          </div>
-      </div>
-  </section>
-
-  <!--===== CONTACT =====-->
-  <section class="contact section" id="contact">
-      <h2 class="section-title">Contact</h2>
-
-      <div class="contact__container bd-grid">
-          <form action="" class="contact__form">
-              <input type="text" placeholder="Name" class="contact__input">
-              <input type="mail" placeholder="Email" class="contact__input">
-              <textarea placeholder="Input Message here" name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-              <input type="button" value="Send" class="contact__button button">
-          </form>
-      </div>
-  </section>
-</main>
-
-<!--===== FOOTER =====-->
-<footer class="footer">
-  <p class="footer__title">Yondika Vio Landa</p>
-  <div class="footer__social">
-      <a href="#" class="footer__icon"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="footer__icon"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="footer__icon"><i class="bi bi-twitter"></i></a>
-  </div>
-  <p>&#169; 2022 copyright all right reserved</p>
-</footer>
+            </div>
+        </div>
+    </div>
 
 
-<!--===== SCROLL REVEAL =====-->
-<script src="https://unpkg.com/scrollreveal"></script>
-<!---JS CDN Link---->
-<script src="js/bootstrap.min.js"></script>
-<!--Custom JS File-->
-<script src="js.js"></script>
-
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/home.js"></script>
 </body>
+
 </html>
